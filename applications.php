@@ -1,6 +1,6 @@
 <?php
-if(isset($_POST['textdata']))
-{
+
+
     $firstName = $_POST['fname'];
     $lasttName = $_POST['lname'];
     $email = $_POST['email'];
@@ -12,12 +12,11 @@ if(isset($_POST['textdata']))
     // $daycare = $_POST['daycare'];
     // $summercamp = $_POST['summercamp'];
 
+    $mailheader = "From:" .$firstname."<".$email.">\r\n";
+    $recipient = "sana.marwa12@gmail.com";
+    mail($recipient, $subject, $firstName , $mailheader)
+    or die("Error!");
 
-              
-              
-              
-              $fp = fopen('data.txt', 'a');
-              fwrite($fp, $firstName, $lasttName);
-              fclose($fp);
-              }
-              ?>
+    echo "message sent";
+
+ ?>

@@ -372,7 +372,8 @@ footer {
   text-decoration: none;
 }
 .col h1{
-  width: fit-content;
+  padding-top: 1rem;
+  width: max-content;
   font-family: 'Sacramento', cursive;
   line-height: 2.5rem;
   letter-spacing: 1px;
@@ -433,7 +434,7 @@ footer {
 }
 .logoimg {
   height: fit-content;
-  width: 70%;
+  width: 50%;
   border-radius: 50%;
 }
 /* .svg1{
@@ -448,7 +449,7 @@ footer {
     right : -20%;
     z-index: -1;
 } */
-.waves1 {
+.about-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -458,69 +459,28 @@ footer {
   transform: rotate(180deg);
 }
 
-.waves1 svg {
+.about-bottom svg {
   position: relative;
   display: block;
   width: calc(128% + 1.3px);
   height: 166px;
 }
 
-.waves1 .shape-fill {
+.about-bottom .shape-fill {
   fill: #ffffff;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-  .waves1 svg {
+  .about-bottom svg {
     width: calc(119% + 1.3px);
     height: 109px;
   }
 }
 
-.blob1 {
-  position: absolute;
-  /* height: 100px; */
-  width: 20vw;
-  bottom: 300px;
-  right: 20%;
-}
-.blob2 {
-  position: absolute;
-  /* height: 100px; */
-  width: 10vw;
-  bottom: 300px;
-  right: 20%;
-}
-.blob3 {
-  position: absolute;
-  /* height: 100px; */
-  width: 15vw;
-  bottom: 150px;
-  left: 20%;
-}
-.pencil > img {
-  position: absolute;
-  /* height: 100px; */
-  width: 12vw;
-  bottom: 119px;
-  right: 15%;
-  animation: pencil 2s ease-in-out 0s 1;
-}
-@keyframes pencil {
-  0% {
-    transform: translateX(0);
-  }
 
-  50% {
-    transform: translateX(100px);
-  }
 
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.custom-shape-divider-bottom-1678643099 {
+/* .custom-shape-divider-bottom-1678643099 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -539,9 +499,9 @@ footer {
 
 .custom-shape-divider-bottom-1678643099 .shape-fill {
   fill: #ffffff;
-}
+} */
 /* hero divider */
-.custom-shape-divider-top-1678651322 {
+.about-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -551,14 +511,14 @@ footer {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1678651322 svg {
+.about-top svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 67px;
 }
 
-.custom-shape-divider-top-1678651322 .shape-fill {
+.about-top .shape-fill {
   fill: #a1a2a4;
 }
 #admission-form {
@@ -613,7 +573,7 @@ input {
 /* ------slideshow------ */
 #environment{
   background: linear-gradient(to left bottom, rgb(254, 215, 79), rgb(61, 236, 255)) center top / auto no-repeat;
-  height: 80vh;
+  min-height: 80vh;
 }
 #environment h2 {
   text-align: center;
@@ -624,6 +584,7 @@ input {
   max-width: 350px;
   position: relative;
   margin: auto;
+  padding-bottom: 2rem;
 }
 
 .mySlides {
