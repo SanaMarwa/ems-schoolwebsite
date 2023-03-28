@@ -63,7 +63,7 @@ nav {
 }
 .logo {
   display: flex;
-  font-size: larger;
+  font-size: 1.5rem;
   font-weight: 700;
   justify-content: flex-start;
   align-items: center;
@@ -107,10 +107,14 @@ nav {
   body {
     overflow-x: hidden;
   }
-  /* .logo {
-    font-size: large;
-    padding: 3px 0px;
-  } */
+  .logo {
+    font-size: 1.25rem;
+    /* padding: 3px 0px; */
+  }
+  nav{
+    padding-left: 0;
+    padding-right: 0.5rem;
+  }
   .nav-links {
     position: absolute;
     right: 0px;
@@ -124,8 +128,8 @@ nav {
     width: 60%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-
-    padding-top: 15vh;
+    justify-content: space-evenly;
+    /* padding-top: 15vh; */
   }
   .nav-links a:hover {
     color: #fff;
@@ -262,6 +266,9 @@ nav {
   width: 100%;
   border-radius: 10px;
 }
+.course-grid .box:hover{
+  box-shadow: 0px 1px 19px 3px rgb(0 0 0 / 77%);
+}
  
  .imgbox{
  position: relative;
@@ -271,6 +278,7 @@ nav {
   background-color: #ffffff;
   width: 100%;
   object-fit: contain;
+  border-radius: 10px 10px 0 0;
   /* max-height: 600px;
   object-fit: contain; */
 }
@@ -304,9 +312,10 @@ a[href="#summercamp-info"] .box{
 #why .container-c{
   align-items: normal;
 }
-/* .box>.text{
+#hero .text{
   background-color: #ffffff57;
 }
+/*
 .box>.text:hover{
   background-color: rgba(255, 255, 255, 0);
 } */
@@ -392,7 +401,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
+    padding: 0;
     padding-top: 2rem;
   }
   .box {
@@ -403,7 +412,8 @@ footer {
   #why,
   #courses,
   #program-info,
-  #environment {
+  #environment,
+  #admission-form {
     padding: 3rem 1rem 3rem 1rem;
   }
 }
@@ -549,7 +559,7 @@ footer {
 }
 
 .custom-shape-divider-top-1678651322 .shape-fill {
-  fill: #222222;
+  fill: #a1a2a4;
 }
 #admission-form {
   display: flex;
@@ -564,6 +574,7 @@ form {
   border-width: 5px;
   padding: 2rem;
   max-width: 500px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
 }
 input {
   /* width: 50%; */
@@ -586,7 +597,7 @@ input {
 }
 #program-info > div {
   padding-bottom: 4rem;
-  padding: 2rem;
+  padding: 1rem;
   max-width: 75ch;
   backdrop-filter: blur(56px);
     line-height: 25px;
@@ -601,11 +612,13 @@ input {
 }
 /* ------slideshow------ */
 #environment{
+  background: linear-gradient(to left bottom, rgb(254, 215, 79), rgb(61, 236, 255)) center top / auto no-repeat;
   height: 80vh;
 }
 #environment h2 {
   text-align: center;
   padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 .slideshow-container {
   max-width: 350px;
@@ -660,4 +673,43 @@ img {
   to {
     opacity: 1;
   }
+}
+.envitop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.envitop svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
+}
+
+.envitop .shape-fill {
+  fill: #FFFFFF;
+}
+.envibottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.envibottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 63px;
+}
+
+.envibottom .shape-fill {
+  fill: #FFFFFF;
 }
