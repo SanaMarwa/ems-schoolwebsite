@@ -434,7 +434,7 @@ footer {
   font-weight: 700;
 }
 .logoimg {
-  height: fit-content;
+  height: 50%;
   width: 50%;
   border-radius: 50%;
 }
