@@ -282,6 +282,9 @@ nav {
   /* max-height: 600px;
   object-fit: contain; */
 }
+#why, #courses{
+  background-color: white;
+}
 #why img{
   height:200px
 }
