@@ -530,7 +530,7 @@ footer {
   justify-content: center;
   align-items: center;
   border: 2px;
-  /* background-color: #1f2937; */
+  background-color: white;
 }
 form {
   background-color: #00c2cb;
@@ -553,7 +553,7 @@ input {
 /* program info */
 #program-info {
   /* background-image: url(/svg/blob-scene-haikei.svg); */
-  background-image:linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)), url(photos/hero4.jpg);
+/*   background-image:linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)), url(photos/hero4.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
