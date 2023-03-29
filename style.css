@@ -46,11 +46,10 @@ header {
 }
 .logoimgh {
   aspect-ratio: 1/1;
-  align-self: flex-start;
-    min-height: auto;
 }
 .logoimgh > img {
   height: 10vh;
+  width: 10vh;
 }
 
 nav {
