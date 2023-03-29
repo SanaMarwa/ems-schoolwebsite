@@ -434,8 +434,8 @@ footer {
   font-weight: 700;
 }
 .logoimg {
-  height: 50%;
-  width: 50%;
+  height: 20vh;
+  width: 20vh;
   border-radius: 50%;
 }
 /* .svg1{
