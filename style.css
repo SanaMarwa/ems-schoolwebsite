@@ -373,7 +373,7 @@ footer {
 }
 .col h1{
   padding-top: 1rem;
-  width: max-content;
+  width: fit-content;
   font-family: 'Sacramento', cursive;
   line-height: 2.5rem;
   letter-spacing: 1px;
