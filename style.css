@@ -1,12 +1,24 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 12vh;
 }
+@media screen and (max-width: 486px) {
+  html {
+    scroll-padding-top: 14vh;
+  }
+  }
+@media screen and (max-width: 355px) {
+  html {
+    scroll-padding-top: 21vh;
+  }
+  }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Roboto", sans-serif; */
 }
+
 :root {
   --color1: #ffbd59;
   --color2: #00c2cb;
@@ -23,8 +35,16 @@ html {
 .red {
   color: var(--color3);
 }
-body {
+main{
   margin-top: 10vh;
+}
+@media screen and (max-width: 355px) {
+main{
+  margin-top: 15vh;
+}
+}
+body {
+  
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
@@ -246,6 +266,7 @@ nav {
 .btn:hover {
   background: #1f2937;
   color: #fff;
+  cursor: pointer;
 }
 /* .text {
   padding-bottom: 2rem;
@@ -268,6 +289,9 @@ nav {
 }
 .course-grid .box:hover{
   box-shadow: 0px 1px 19px 3px rgb(0 0 0 / 77%);
+}
+#why .course-grid .box:hover{
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.4);
 }
  
  .imgbox{
@@ -531,6 +555,10 @@ footer {
   align-items: center;
   border: 2px;
   background-color: white;
+  background-image: url(photos/colorballs.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 form {
   background-color: #00c2cb;
@@ -574,7 +602,7 @@ input {
       background-size: cover;
 }
 #program-info > div {
-  padding-bottom: 4rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   max-width: 75ch;
   backdrop-filter: blur(56px);
@@ -692,4 +720,10 @@ img {
 
 .envibottom .shape-fill {
   fill: #FFFFFF;
+}
+.progheading{
+  padding:1rem;
+  border-radius: 5px;
+  backdrop-filter: blur(56px);
+  background-color: #ffffffa1;
 }
