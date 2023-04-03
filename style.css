@@ -20,7 +20,7 @@ html {
 }
 
 :root {
-  --color1: #ffbd59;
+  --color1: #ff9900;
   --color2: #00c2cb;
   --color3: #f4511c;
   --color4: #f8362c;
@@ -82,6 +82,7 @@ nav {
   /*background-color: aquamarine;*/
 }
 .logo {
+  padding-top: 2px;
   display: flex;
   font-size: 1.5rem;
   font-weight: 700;
@@ -109,7 +110,6 @@ nav {
   font-size: large;
   font-weight: 500;
   text-shadow: #1f2937;
-  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.127); */
 }
 .burger {
   display: none;
@@ -156,7 +156,6 @@ nav {
     font-size: large;
     font-weight: 500;
     text-shadow: #1f2937;
-    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.127); */
   }
   .overlay {
     height: 100vh;
@@ -202,7 +201,6 @@ nav {
 .container-c {
   width: 100%;
   min-height: 40vh;
-  /* height: 60vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -213,13 +211,15 @@ nav {
 }
 .hero {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1655556942681-e91f24bad737?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); */
-  /* background-color: var(--color2); */
+  background-color: var(--color2);
   /* background-image: url(/photos/hero1.jpg); */
   /* background-image: linear-gradient(rgba(183, 183, 183, 0.332), rgba(35, 34, 34, 0.381)),url(/photos/hero.jpg); */
   /* background-image:linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)),url(/photos/hero1.jpg); */
   /* background-image: linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)),url(/photos/hero2.jpg); */
   /* background-image: linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)),url(/photos/hero4.jpg); */
-  background-image: linear-gradient(rgb(99 99 99 / 16%), rgba(35, 34, 34, 0.327)),url(photos/hero3.jpg);
+  /* background-image: linear-gradient(rgb(99 99 99 / 16%), rgba(35, 34, 34, 0.327)),url(photos/hero3.jpg); */
+  background-image: linear-gradient(rgb(99 99 99 / 16%), rgba(35, 34, 34, 0.327)),url(photos/hero3-min.jpg);
+
   
   background-position: center;
   background-size: cover;
@@ -419,7 +419,6 @@ footer {
   align-items: flex-end;
 }
 .icons i {
-  /* padding-right: 1rem; */
   padding-left: 1rem;
 }
 
@@ -448,14 +447,9 @@ footer {
 }
 #about {
   background: linear-gradient(to bottom left, #fed74f, #3decff);
-  background-position: top;
+  /* background-position: top;
   background-repeat: no-repeat;
-  background-size: auto;
-  /* position: relative; */
-  /* background-image: url(/liquid-cheese.png); */
-  /* background-image: url(/svg.png); */
-
-  /* background-image: url(https://cdn.pixabay.com/photo/2021/06/24/11/18/background-6360865_960_720.png); */
+  background-size: auto; */
 }
 #about h2 {
   font-weight: 700;
@@ -465,18 +459,6 @@ footer {
   width: 20vh;
   border-radius: 50%;
 }
-/* .svg1{
-    max-width: 10vw;
-    overflow-x: auto;
-}
-.svg1 img{
-    position: absolute;
-    background: none;
-    width: 100vw;
-    height: 200px;
-    right : -20%;
-    z-index: -1;
-} */
 .about-bottom {
   position: absolute;
   bottom: 0;
@@ -506,28 +488,6 @@ footer {
   }
 }
 
-
-
-/* .custom-shape-divider-bottom-1678643099 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1678643099 svg {
-  position: relative;
-  display: block;
-  width: calc(102% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-bottom-1678643099 .shape-fill {
-  fill: #ffffff;
-} */
 /* hero divider */
 .about-top {
   position: absolute;
@@ -555,7 +515,7 @@ footer {
   align-items: center;
   border: 2px;
   background-color: white;
-  background-image: url(photos/colorballs.jpg);
+  /* background-image: url(photos/colorballs.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -580,8 +540,6 @@ input {
 }
 /* program info */
 #program-info {
-  /* background-image: url(/svg/blob-scene-haikei.svg); */
-/*   background-image:linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)), url(photos/hero4.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -596,6 +554,7 @@ input {
       right:0;
       z-index:-1; /* needed to keep in the background */
       background: linear-gradient(rgb(99 99 99 / 16%), rgb(35 34 34 / 10%)), url(photos/hero4.jpg) center center;
+      background: linear-gradient(to bottom left, #fed74f, #3decff);
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -721,9 +680,22 @@ img {
 .envibottom .shape-fill {
   fill: #FFFFFF;
 }
+/* program page */
 .progheading{
   padding:1rem;
   border-radius: 5px;
   backdrop-filter: blur(56px);
   background-color: #ffffffa1;
+}
+.vidlink{
+  position: relative;
+  padding-bottom: 56.25%;
+  height:0;
+}
+.vidlink iframe{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
 }
