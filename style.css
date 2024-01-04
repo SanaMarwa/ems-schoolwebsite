@@ -351,6 +351,7 @@ nav {
 }
 #why img {
   height: 200px;
+  padding: 1rem;
 }
 
 a[href="#toddler-info"] .box,
@@ -666,6 +667,7 @@ img {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
+  border: none;
 }
 .slideshow-container a {
   font-size: 1rem;
