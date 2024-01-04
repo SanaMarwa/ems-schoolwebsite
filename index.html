@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elysian Montessori School Website: Showcasing teaching, learing methodology and environment for children."
+      content="Elysian Montessori School Website: Offering high-quality Montessori learning environment for children ages 1½ through 6 years."
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
@@ -51,7 +51,7 @@
           <div class="logoimgh">
             <img src="photos/logo.png" alt="Elysian Montessori School Logo" />
           </div>
-          <a href="#" class="logo"
+          <a href="/" class="logo"
             ><h1>
               <span class="yellow">Elysian</span>
               <span class="blue">Montessori</span>
@@ -64,6 +64,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="programs.html">Programs</a></li>
           <li><a href="#Contact">Contact</a></li>
+          <li><a href="#admission-form" class="alt-btn">Admission</a></li>
         </ul>
 
         <div class="burger">
@@ -77,7 +78,7 @@
     <main>
       <section class="hero">
         <div class="container-c">
-          <h2>Welcome to Elysian Montessori School</h2>
+          <h1>Welcome to Elysian Montessori School</h1>
           <p>
             Offering high-quality Montessori learning environments for children
             ages 1½ through 6 years.
@@ -101,53 +102,50 @@
             ></path>
           </svg>
         </div>
-
-        <div class="container-c">
-          <div class="text">
-            <h2>About Montessori Education</h2>
-            <br />
-            <p>
-              The Montessori method developed by Dr. Maria Montessori, is a
-              child centered educational approach based on the scientific
-              observations from birth to adulthood.
-            </p>
+        <div class="about-container">
+          <video src="about.mp4" autoplay loop></video>
+          <div class="container-c">
+            <div class="text">
+              <h2>About Montessori Education</h2>
+              <br />
+              <p>
+                Step into the dynamic world of Montessori education, a journey
+                of self-discovery where each child is a unique explorer.
+                Developed by Dr. Maria Montessori, this approach fosters
+                independence, creativity, and a love for learning. In Montessori
+                classrooms, hands-on, experiential learning empowers students at
+                their own pace, cultivating a lifelong passion for knowledge and
+                shaping confident, well-rounded learners. Welcome to
+                Montessori—an adventure celebrating the joy of discovery and
+                holistic child development.
+              </p>
+            </div>
           </div>
-          <!--
-				<div class="image">
-					<img src="abtmont.jpg" style="width:100%">
-				</div>
-                -->
+
+          <div class="container-c">
+            <div class="text">
+              <h2>Our Mission</h2>
+              <br />
+              <p>
+                We are dedicated to creating a personalized learning atmosphere
+                inspired by the principles of Dr. Maria Montessori. Our goal is
+                to empower children to develop into independent, lifelong
+                learners with a solid academic foundation and social confidence.
+                Join us on a journey where education meets individualized
+                growth, preparing our students not only academically but also
+                socially for their place in the world.
+              </p>
+            </div>
+          </div>
         </div>
 
-        
-          <div class="quote">
-            <p>
-              "How much fuller and richer life would be if we saw the child in
-              all his greatness, all his beauty, instead of focusing on all his
-              little mistakes?"
-            </p>
-            <h3>~ Maria Montessori</h3>
-          </div>
-        
-          <!--
-				<div class="image">
-					<img src="abtmont.jpg" style="width:100%">
-				</div>
-                -->
-        </div>
-
-        <div class="container-c">
-          <div class="text">
-            <h2>Our Mission</h2>
-            <br />
-            <p>
-              To provide an individualized learning environment based on the
-              principles of Dr. Maria Montessori, that are designed to help
-              children become independent, lifelong learners who are
-              academically grounded and socially confident about their place in
-              the world.
-            </p>
-          </div>
+        <div class="quote">
+          <p>
+            "How much fuller and richer life would be if we saw the child in all
+            his greatness, all his beauty, instead of focusing on all his little
+            mistakes?"
+          </p>
+          <h3>~ Maria Montessori</h3>
         </div>
 
         <!-- waves divider1 -->
@@ -323,7 +321,7 @@
                   <img src="photos/kindergarten1.jpg" alt="Primary" />
                 </div>
                 <div class="text">
-                  <h3>Primary / Kindergarten:</h3>
+                  <h3>Primary:</h3>
                   <p>Ages 3 - 6 years.</p>
                 </div>
               </div>
@@ -360,16 +358,15 @@
       <!-- learn more botton -->
 
       <section id="admission-form">
-        
-          <div class="quote">
-            <p>
-              "How much fuller and richer life would be if we saw the child in
-              all his greatness, all his beauty, instead of focusing on all his
-              little mistakes?"
-            </p>
-            <h3>~ Maria Montessori</h3>
-          </div>
-        
+        <!-- <div class="quote">
+          <p>
+            "How much fuller and richer life would be if we saw the child in all
+            his greatness, all his beauty, instead of focusing on all his little
+            mistakes?"
+          </p>
+          <h3>~ Maria Montessori</h3>
+        </div> -->
+
         <form action="applications.php" method="post">
           <h1>Admission Inquiry</h1>
           <br />
@@ -413,7 +410,7 @@
             required
           />
           <br />
-          <label for="dob">DOB *</label>
+          <label for="dob">DOB </label>
           <br />
           <input type="date" id="dob" name="dob" value="" />
           <br />
@@ -422,27 +419,42 @@
             need) *</label
           >
           <br />
-          <input type="checkbox" name="program" id="toddler" value="toddler" />
+          <input
+            type="checkbox"
+            name="program[]"
+            id="toddler"
+            value="toddler"
+          />
           <label for="toddler">Toddler </label>
           <br />
           <!-- <input type="checkbox" id="2" name="Pre" />
           <label for="2">Pre-Primary </label>
           <br /> -->
-          <input type="checkbox" name="program" id="primary" value="primary" />
-          <label for="primary">Primary/ Kindergarten </label>
+          <input
+            type="checkbox"
+            name="program[]"
+            id="primary"
+            value="primary"
+          />
+          <label for="primary">Primary </label>
           <br />
-          <input type="checkbox" name="program" id="daycare" value="daycare" />
+          <input
+            type="checkbox"
+            name="program[]"
+            id="daycare"
+            value="daycare"
+          />
           <label for="daycare">Day-Care </label>
           <br />
           <input
             type="checkbox"
-            name="program"
+            name="program[]"
             id="summercamp"
             value="summercamp"
           />
           <label for="summercamp">Summer Camp</label>
           <br />
-          <input type="submit" class="btn" />
+          <input type="submit" class="btn" id="submitbtn" />
         </form>
       </section>
 

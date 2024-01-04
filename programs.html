@@ -51,7 +51,7 @@
           <div class="logoimgh">
             <img src="photos/logo.png" alt="Elysian Montessori School Logo" />
           </div>
-          <a href="index.html" class="logo"
+          <a href="/" class="logo"
             ><h1>
               <span class="yellow">Elysian</span>
               <span class="blue">Montessori</span>
@@ -60,10 +60,11 @@
           </a>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="#">Programs</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/programs.html">Programs</a></li>
           <li><a href="#Contact">Contact</a></li>
+          <li><a href="#admission-form" class="alt-btn">Admission</a></li>
         </ul>
 
         <div class="burger">
@@ -86,7 +87,7 @@
               <div class="box">
                 <!-- imgbox -->
                 <div class="imgbox">
-                  <img src="photos/toddler1.jpg" alt="Toddler" />
+                  <img src="photos/toddler1W.webp" alt="Toddler" />
                 </div>
                 <div class="text">
                   <h3>Toddler:</h3>
@@ -107,7 +108,7 @@
                   <img src="photos/kindergarten1.jpg" alt="Primary" />
                 </div>
                 <div class="text">
-                  <h3>Primary / Kindergarten:</h3>
+                  <h3>Primary:</h3>
                   <p>Ages 3 - 6 years.</p>
                 </div>
               </div>
@@ -128,7 +129,7 @@
             <a href="#summercamp-info">
               <div class="box">
                 <div class="imgbox">
-                  <img src="photos/summercamp2.jpg" alt="Summercamp" />
+                  <img src="photos/summercamp2W.webp" alt="Summercamp" />
                 </div>
                 <div class="text">
                   <h3>Summer Camps:</h3>
@@ -145,11 +146,11 @@
           <h2 style="color: var(--color1)">Toddler</h2>
           <div class="program-img">
             <img
-              src="photos/toddler3.jpeg"
+              src="photos/toddler3W.webp"
               alt="Toddler playing with utensils"
             />
             <img
-              src="photos/toddlerinfo2.jpg"
+              src="photos/toddlerinfo2W.webp"
               alt="Toddler learning to button a shirt"
             />
           </div>
@@ -221,9 +222,12 @@
         <div id="primary-info">
           <h2 style="color: var(--color2)">Primary Environment</h2>
           <div class="program-img">
-            <img src="photos/toddlerinfo.jpg" alt="Toddler learning to count" />
             <img
-              src="photos/primary-info.jpg"
+              src="photos/toddlerinfoW.webp"
+              alt="Toddler learning to count"
+            />
+            <img
+              src="photos/primary-infoW.webp"
               alt="Kid learning to write numbers"
             />
           </div>
@@ -342,7 +346,7 @@
           <h2 style="color: var(--color3)">Day-care</h2>
           <div class="program-img">
             <img
-              src="photos/daycare-info.jpg"
+              src="photos/daycare-infoW.webp"
               alt="Toddler sleeping in a Crib in Daycare"
             />
             <!-- <img src="photos/primary-info.jpg" alt="" /> -->
@@ -368,7 +372,7 @@
               alt="Children playing and doing fun activities"
             />
             <img
-              src="photos/isumercamp3.jpg"
+              src="photos/summercampinfoW.webp"
               alt="Child learning to roll dough"
             />
           </div>
@@ -437,7 +441,7 @@
             required
           />
           <br />
-          <label for="dob">DOB *</label>
+          <label for="dob">DOB</label>
           <br />
           <input type="date" id="dob" name="dob" value="" />
           <br />
@@ -446,22 +450,42 @@
             need) *</label
           >
           <br />
-          <input type="checkbox" name="program" id="toddler" />
+          <input
+            type="checkbox"
+            name="program[]"
+            id="toddler"
+            value="toddler"
+          />
           <label for="toddler">Toddler </label>
           <br />
           <!-- <input type="checkbox" id="2" name="Pre" />
           <label for="2">Pre-Primary </label>
           <br /> -->
-          <input type="checkbox" name="program" id="primary" />
-          <label for="primary">Primary/ Kindergarten </label>
+          <input
+            type="checkbox"
+            name="program[]"
+            id="primary"
+            value="primary"
+          />
+          <label for="primary">Primary </label>
           <br />
-          <input type="checkbox" name="program" id="daycare" />
+          <input
+            type="checkbox"
+            name="program[]"
+            id="daycare"
+            value="daycare"
+          />
           <label for="daycare">Day-Care </label>
           <br />
-          <input type="checkbox" name="program" id="summercamp" />
+          <input
+            type="checkbox"
+            name="program[]"
+            id="summercamp"
+            value="summercamp"
+          />
           <label for="summercamp">Summer Camp</label>
           <br />
-          <input type="submit" class="btn" />
+          <input type="submit" class="btn" id="submitbtn" />
         </form>
       </section>
 
