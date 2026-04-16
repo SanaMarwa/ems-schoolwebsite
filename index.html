@@ -6,512 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elysian Montessori School Website: Offering high-quality Montessori learning environment for children ages 1½ through 6 years."
+      content="Elysian Montessori School: a nurturing Montessori environment for toddlers and primary students with hands-on, child-led learning."
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="favicon_io/site.webmanifest" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/dc4cb3ac1f.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="script.js" defer></script>
     <title>Elysian Montessori School</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <div class="logoimgh">
-            <img src="photos/logo.png" alt="Elysian Montessori School Logo" />
-          </div>
-          <a href="/" class="logo"
-            ><h1>
-              <span class="yellow">Elysian</span>
-              <span class="blue">Montessori</span>
-              <span class="red">School</span>
-            </h1>
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="#Contact">Contact</a></li>
-          <li><a href="#admission-form" class="alt-btn">Admission</a></li>
-        </ul>
+    <header class="site-header">
+      <nav class="nav-wrap container">
+        <a class="brand" href="index.html">
+          <img src="photos/logo.png" alt="Elysian Montessori School logo" />
+          <span>Elysian Montessori School</span>
+        </a>
 
-        <div class="burger">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#campus">Campus Life</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-small" href="programs.html">Full Programs</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container-c">
-          <h1>Welcome to Elysian Montessori School</h1>
-          <p>
-            Offering high-quality Montessori learning environments for children
-            ages 1½ through 6 years.
-          </p>
-
-          <a href="#about" class="btn">Get Started</a>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="about-top">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <div class="about-container">
-          <video src="about.mp4" autoplay loop></video>
-          <div class="container-c o-1">
-            <div class="text">
-              <h2>About Montessori Education</h2>
-              <br />
-              <p>
-                Step into the dynamic world of Montessori education, a journey
-                of self-discovery where each child is a unique explorer.
-                Developed by Dr. Maria Montessori, this approach fosters
-                independence, creativity, and a love for learning. In Montessori
-                classrooms, hands-on, experiential learning empowers students at
-                their own pace, cultivating a lifelong passion for knowledge and
-                shaping confident, well-rounded learners. Welcome to
-                Montessori—an adventure celebrating the joy of discovery and
-                holistic child development.
-              </p>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Ages 18 months to 6 years</p>
+            <h1>Where curiosity grows into confidence.</h1>
+            <p>
+              At Elysian Montessori School, children learn through meaningful work,
+              gentle guidance, and thoughtfully prepared environments.
+            </p>
+            <div class="hero-actions">
+              <a href="#admissions" class="btn">Schedule a Tour</a>
+              <a href="#about" class="btn btn-ghost">Explore Montessori</a>
             </div>
           </div>
-
-          <div class="container-c">
-            <div class="text">
-              <h2>Our Mission</h2>
-              <br />
-              <p>
-                We are dedicated to creating a personalized learning atmosphere
-                inspired by the principles of Dr. Maria Montessori. Our goal is
-                to empower children to develop into independent, lifelong
-                learners with a solid academic foundation and social confidence.
-                Join us on a journey where education meets individualized
-                growth, preparing our students not only academically but also
-                socially for their place in the world.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="quote">
-          <p>
-            "How much fuller and richer life would be if we saw the child in all
-            his greatness, all his beauty, instead of focusing on all his little
-            mistakes?"
-          </p>
-          <h3>~ Maria Montessori</h3>
-        </div>
-
-        <!-- waves divider1 -->
-        <div class="about-bottom">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </section>
-
-      <section id="why">
-        <div class="container-c">
-          <h2>Why Elysian Montessori school?</h2>
-          <div class="course-grid">
-            <div class="box">
-              <div class="imgbox">
-                <img src="photos/a-1.png" alt="Fostering individuality" />
-              </div>
-              <div class="text">
-                <h3>Success Beyond Academics</h3>
-                <p>
-                  Our Montessori school is crafted to instill a passion for
-                  learning and guide children in cultivating independence,
-                  fostering individuality, nurturing creativity, and honing
-                  critical thinking skills. Success goes beyond academics as we
-                  prioritize holistic growth and development.
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="imgbox">
-                <img src="photos/a-2.png" alt="Strong Academic Strength" />
-              </div>
-              <div class="text">
-                <h3>
-                  Learning Tailored to Your Child Using Age-Appropriate
-                  Resources
-                </h3>
-                <p>
-                  Our Montessori classrooms are designed to be child-friendly,
-                  with materials that are carefully chosen to meet the
-                  developmental needs of each individual child, helping them to
-                  learn kinesthetically and achieve greater confidence in their
-                  abilities.
-                </p>
-              </div>
-            </div>
-
-            <div class="box">
-              <div class="imgbox">
-                <img src="photos/a-3.png" alt="We're a Community" />
-              </div>
-              <div class="text">
-                <h3>Providing a Nurturing and Enriching Environment</h3>
-                <p>
-                  By choosing our Montessori school, parents can provide their
-                  children with a supportive and engaging learning environment
-                  to help them thrive academically, socially, and emotionally.
-                </p>
-              </div>
-            </div>
+          <div class="hero-media">
+            <img src="photos/hero3-min.jpg" alt="Children exploring Montessori materials in class" />
           </div>
         </div>
       </section>
 
-      <section id="environment">
-        <div class="envitop">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <h2>Our Environment</h2>
-        <div class="slideshow-container">
-          <div class="mySlides fade" style="display: block">
-            <img src="photos/e1.jpg" alt="environment" />
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Our Montessori Philosophy</h2>
+            <p>
+              We believe each child is naturally motivated to learn. Our teachers
+              guide children to choose purposeful activities, build concentration,
+              and develop independence at their own pace.
+            </p>
+            <ul class="check-list">
+              <li>Mixed-age classrooms that encourage peer learning.</li>
+              <li>Hands-on materials for practical life, language, math, and culture.</li>
+              <li>Respectful, calm routines that support emotional growth.</li>
+            </ul>
           </div>
-          <div class="mySlides fade">
-            <img src="photos/e2.jpg" alt="environment" />
-          </div>
-          <div class="mySlides fade">
-            <img src="photos/e3.jpg" alt="environment" />
-          </div>
-          <div class="mySlides fade">
-            <img src="photos/e4.jpg" alt="environment" />
-          </div>
-          <div class="mySlides fade">
-            <img src="photos/e5.jpg" alt="environment" />
-          </div>
-          <div class="mySlides fade">
-            <img src="photos/e6.jpg" alt="environment" />
-          </div>
-          <div class="mySlides fade">
-            <img src="photos/e7.jpeg" alt="environment" />
-          </div>
-          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-          <button class="next" onclick="plusSlides(1)">&#10095;</button>
-        </div>
-        <div class="envibottom">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"
-            ></path>
-          </svg>
+          <img src="photos/individuality1.jpeg" alt="Teacher supporting a child during independent activity" />
         </div>
       </section>
 
-      <section id="courses">
-        <!-- body -->
-        <div class="container-c">
-          <h2>Our Educational Programs</h2>
-          <!-- container -->
-          <div class="course-grid">
-            <a href="programs.html">
-              <!-- box -->
-              <div class="box" style="background-color: var(--color1)">
-                <!-- imgbox -->
-                <div class="imgbox">
-                  <img src="photos/toddler1W.webp" alt="Toddler" />
-                </div>
-                <div class="text">
-                  <h3>Toddler:</h3>
-                  <p>Ages 18 months - 24 months.</p>
-                </div>
-              </div>
-            </a>
-
-            <!-- <div class="box">
-                <img src="photos/preprimary.jpg" alt="Pre-primary" />
-                <h3>Pre-Primary:</h3>
-                <p>Ages 2 - 3 years.</p>
-              </div> -->
-
-            <a href="programs.html">
-              <div class="box" style="background-color: var(--color2)">
-                <div class="imgbox">
-                  <img src="photos/kindergarten1.jpg" alt="Primary" />
-                </div>
-                <div class="text">
-                  <h3>Primary:</h3>
-                  <p>Ages 3 - 6 years.</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="programs.html">
-              <div class="box" style="background-color: var(--color3)">
-                <div class="imgbox">
-                  <img src="photos/daycare.jpg" alt="Daycare" />
-                </div>
-                <div class="text">
-                  <h3>Before & After Care:</h3>
-                  <p>Ages 1.5 - 8 years.</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="programs.html">
-              <div class="box" style="background-color: var(--color4)">
-                <div class="imgbox">
-                  <img src="photos/summercamp2W.webp" alt="Summercamp" />
-                </div>
-                <div class="text">
-                  <h3>Summer Camps:</h3>
-                  <p>Ages 3 - 12 years.</p>
-                </div>
-              </div>
-            </a>
+      <section id="programs" class="section section-soft">
+        <div class="container">
+          <h2>Programs for Early Childhood</h2>
+          <div class="card-grid">
+            <article class="card">
+              <img src="photos/toddler1W.webp" alt="Toddler classroom" />
+              <h3>Toddler Community</h3>
+              <p>18 to 36 months. Gentle transitions, language-rich routines, and practical life foundations.</p>
+            </article>
+            <article class="card">
+              <img src="photos/kindergarten1.jpg" alt="Primary classroom" />
+              <h3>Primary Program</h3>
+              <p>3 to 6 years. Child-led exploration in math, literacy, sensorial, and cultural studies.</p>
+            </article>
+            <article class="card">
+              <img src="photos/daycare-infoW.webp" alt="Before and after care classroom" />
+              <h3>Extended Care</h3>
+              <p>Flexible before/after care with outdoor play, enrichment activities, and community building.</p>
+            </article>
           </div>
         </div>
-        <a href="programs.html" class="btn">Our Programs</a>
       </section>
 
-      <!-- learn more botton -->
-
-      <section id="admission-form">
-        <!-- <div class="quote">
-          <p>
-            "How much fuller and richer life would be if we saw the child in all
-            his greatness, all his beauty, instead of focusing on all his little
-            mistakes?"
-          </p>
-          <h3>~ Maria Montessori</h3>
-        </div> -->
-
-        <form action="applications.php" method="post">
-          <h1>Admission Inquiry</h1>
-          <br />
-          <label for="fname">First Name *</label>
-          <br />
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="First Name"
-            required
-          />
-          <br />
-          <label for="lname">Last Name *</label>
-          <br />
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="Last Name"
-            required
-          />
-          <br />
-          <label for="email">Email *</label>
-          <br />
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            name="email"
-            required
-          />
-          <br />
-          <label for="pnum">Phone *</label>
-          <br />
-          <input
-            type="tel"
-            id="pnum"
-            placeholder="Phone Number"
-            name="pnum"
-            required
-          />
-          <br />
-          <label for="dob">DOB </label>
-          <br />
-          <input type="date" id="dob" name="dob" value="" />
-          <br />
-          <label for="select"
-            >Which program(s) are you interested in? (select as many as you
-            need) *</label
-          >
-          <br />
-          <input
-            type="checkbox"
-            name="program[]"
-            id="toddler"
-            value="toddler"
-          />
-          <label for="toddler">Toddler </label>
-          <br />
-          <!-- <input type="checkbox" id="2" name="Pre" />
-          <label for="2">Pre-Primary </label>
-          <br /> -->
-          <input
-            type="checkbox"
-            name="program[]"
-            id="primary"
-            value="primary"
-          />
-          <label for="primary">Primary </label>
-          <br />
-          <input
-            type="checkbox"
-            name="program[]"
-            id="daycare"
-            value="daycare"
-          />
-          <label for="daycare">Day-Care </label>
-          <br />
-          <input
-            type="checkbox"
-            name="program[]"
-            id="summercamp"
-            value="summercamp"
-          />
-          <label for="summercamp">Summer Camp</label>
-          <br />
-          <input type="submit" class="btn" id="submitbtn" />
-        </form>
-      </section>
-
-      <footer id="Contact">
-        <div class="row">
-          <div class="col">
-            <img
-              src="photos/logo.png"
-              class="logoimg"
-              alt="Elysian Montessori School Logo"
-            />
-            <h1>Elysian Montessori School</h1>
-            <div class="icons">
-              <h3>Social Media:</h3>
-              <a
-                href="https://www.facebook.com/profile.php?id=100088396164988"
-                title="Facebook Page"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-square-facebook fa-xl"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/elysianmontessori/"
-                title="Instagram Page"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-instagram fa-xl"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col">
-            <h3>Address:</h3>
-            <p>Al Kareem Complex,</p>
-            <p>Al-Hasnath Colony,</p>
-            <p>Road No. 2, Tolichowki,</p>
-            <p>Hyderabad - 500008.</p>
-            <h3>Contact:</h3>
-            <p>+917416488977</p>
-            <h3>Email:</h3>
-            <p>elysianmontessori@gmail.com</p>
-          </div>
-
-          <div class="col">
-            <h3>Location:</h3>
-            <section class="location">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3201.5349057181716!2d78.4208260744882!3d17.39795683718205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b378afc425%3A0xe4cae8e9e5b44be7!2sElysian%20Montessori%20School!5e0!3m2!1sen!2sin!4v1680012100527!5m2!1sen!2sin"
-                width="200"
-                height="200"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                title="Location Map"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </section>
-            <p>© 2024 Elysian Montessori School</p>
+      <section id="campus" class="section">
+        <div class="container split-highlight">
+          <img src="photos/community.jpeg" alt="Children and teachers in a group learning activity" />
+          <div>
+            <h2>A Joyful School Community</h2>
+            <p>
+              From garden work to storytelling circles, our days are filled with rich
+              experiences that nurture concentration, empathy, and a lifelong love of learning.
+            </p>
+            <blockquote>
+              “The child is both a hope and a promise for mankind.”
+              <cite>— Maria Montessori</cite>
+            </blockquote>
           </div>
         </div>
-      </footer>
+      </section>
+
+      <section id="admissions" class="section section-soft">
+        <div class="container two-col admissions">
+          <div>
+            <h2>Admissions</h2>
+            <p>
+              We welcome families year-round based on availability. Start with a campus
+              visit, then complete the inquiry form and student meet-and-greet.
+            </p>
+            <ol>
+              <li>Book a personal tour.</li>
+              <li>Submit an application.</li>
+              <li>Attend your child’s classroom visit.</li>
+              <li>Receive enrollment decision and onboarding details.</li>
+            </ol>
+          </div>
+          <form action="applications.php" method="post" class="apply-form">
+            <label>
+              Parent / Guardian Name
+              <input type="text" name="parent_name" required />
+            </label>
+            <label>
+              Child Name
+              <input type="text" name="child_name" required />
+            </label>
+            <label>
+              Child Age
+              <input type="text" name="child_age" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Program of Interest
+              <select name="program">
+                <option value="Toddler">Toddler Community</option>
+                <option value="Primary">Primary Program</option>
+                <option value="Extended Care">Extended Care</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Submit Inquiry</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <div class="overlay"></div>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Elysian Montessori School</h3>
+          <p>123 Learning Grove, Pleasantville, CA 94000</p>
+        </div>
+        <div>
+          <p><strong>Phone:</strong> (555) 010-2026</p>
+          <p><strong>Email:</strong> hello@elysianmontessori.org</p>
+        </div>
+        <div>
+          <p>Mon–Fri: 8:00 AM – 5:30 PM</p>
+          <p id="year"></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
