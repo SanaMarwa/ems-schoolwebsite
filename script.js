@@ -1,36 +1,21 @@
-const burger = document.getElementsByClassName('burger')[0];
-const nav = document.getElementsByClassName('nav-links')[0];
-const overlay = document.getElementsByClassName('overlay')[0];
+const toggleButton = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const yearField = document.querySelector('#year');
 
-burger.addEventListener('click',()=>{
-    nav.classList.toggle('nav-active')
-    burger.classList.toggle('toggle')
-    overlay.classList.toggle('overlay-active')
-})
-// slideshow
-var slideIndex =1;
-showSlides(slideIndex);
+if (toggleButton && navLinks) {
+  toggleButton.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    toggleButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggleButton.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+if (yearField) {
+  yearField.textContent = `© ${new Date().getFullYear()} Elysian Montessori School. All rights reserved.`;
 }
