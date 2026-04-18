@@ -21,6 +21,7 @@ body {
   font-family: 'Nunito', sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #fff9ec 0%, #ffffff 30%, #f3fbff 100%);
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -41,6 +42,7 @@ img {
 
 .section-soft {
   background: linear-gradient(180deg, #fffaf0 0%, #f1fbff 100%);
+  background: #f9fbfc;
 }
 
 h1,
@@ -69,6 +71,7 @@ li {
   top: 0;
   z-index: 20;
   background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 253, 248, 0.96);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(6px);
 }
@@ -115,6 +118,9 @@ li {
 .btn {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary), var(--sky));
+.btn {
+  display: inline-block;
+  background: var(--primary);
   color: #fff;
   text-decoration: none;
   border: none;
@@ -235,6 +241,10 @@ blockquote {
   border-radius: 0.25rem 0.75rem 0.75rem 0.25rem;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
+  border-left: 4px solid var(--secondary);
+  padding-left: 1rem;
+  color: var(--text);
+  font-style: italic;
 }
 
 blockquote cite {
@@ -252,6 +262,9 @@ blockquote cite {
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 12px 24px rgba(67, 96, 107, 0.14);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .apply-form label {
@@ -271,6 +284,7 @@ select {
 
 .site-footer {
   background: linear-gradient(135deg, #1f3751, #2c7a7b, #355c7d);
+  background: #1c2a30;
   color: #dfebef;
   padding: 2rem 0;
 }
